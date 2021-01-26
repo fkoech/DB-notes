@@ -1,0 +1,46 @@
+SQL language 
+--------------
+-DDL, DML, DCL, TCL
+-Data definition language(DDL)
+      -Statement used to create, alter and drop ddatabase object
+      -create: used to define new object.
+      -ALTER: used to modify the definition of existing object.
+      -DROP: used to remove existing entities.
+      -TRUNCATE TABLE: used  to remove all rows from a table without  logging the individual row d
+                       row deletions.
+                       
+  -DML(data manipulation language)
+       - statements used  to retrieve, insert,
+         update, remove and  manage data within DB objects
+       -SELECT: retrives one or more rows from a table or views.
+       -INSERT: insert one or more rows from a table or view
+       -UPDATE: changes existing data in a table  or view.
+       -DELETE:  Remove  one or more rows from a table or views.
+       -BULK INSERT: Imports a data file  into a database table  or view in a user-specificied format.
+       -MERGE - performs insert, update and /  or delete operation on a
+                target table based on the result of join with  a source table in one transaction.
+                
+       
+
+DCL - Data control Language 
+---------------------------------
+-Statement used to control the access of data stored in database and provide data security.
+-GRANT - grants permissions on a securable to a principal.
+-REVOKE: Removes a previous granted or denied  permission.
+-EXECUTE AS, statement: Sets the execution contexts of a session.
+-EXECUTE AS, clause: defines the execution context of the following user-defined modules: functions
+ (exept inline table-valued functions), procedures, queues, and triggers.
+ -REVERT -  switches the execution context back to the caller of the last EXECUTE  AS statement.
+ 
+ 
+ TCL
+ -------
+ Transaction control language
+ --------------------------------
+ -Statement used to manage the changes made by DML statement.
+ -It allows statement to be grouped together into logical transactions.
+ -BEGIN TRANSACTION - marks the starting point of an explicit, local transaction.
+                    - BEGIN TRANSACTION increments @@TRANCOUNT by 1
+ -COMMIT TRANSACTION: marks the end of a successful implicit or explicit transaction.
+ -ROLLBACK TRANSACTION - rolls back an explicit or implicit transaction to the  beginning of the transaction.
+                         or to a savepoint inside the transaction.
